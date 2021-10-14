@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="youtube.css" />
+    <link rel="stylesheet" type="text/css" href="youtubemedia.css"/>
+  </head>
+  <body>
+      <header>
+        <div id="container">
+          <div id="start">
+            <div id="guide-button">
+              <img class="menu-btn" src="guide1.png" />
+            </div>
+            <div id="logo">
+              <img src="youtubelogo.png" />
+            </div>
+          </div>
+          <div id="center">
+            <div id="search-box">
+                <input type="text" id="text-search" placeholder="search" />
+                <img class="keyboard" src="keyboard.png" />
+              <button id="search-btn"><img src="search.png" /></button>
+            </div>
+            <div id="voice-search"><img src="voice.png" /></div>
+          </div>
+          <div id="end">
+            <div id="top_btns">
+              <img src="6dot.png" />
+              <img src="3dot.png" />
+              <img src="login.png" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="menuWrap">
+        <div id="start-box">
+          <img class="closebtn" src="guide1.png"/>
+          <div id="logo">
+            <img class="ytbImg" src="youtubelogo.png"/>
+          </div>
+        </div>
+        <div class="menu-box btns1" onclick="touch(1)">
+          <img class="homeTouch" src="home1.png"/>
+          <h3>홈</h3>
+        </div>
+        <div class="menu-box btns2" onclick="touch(2)">
+          <img class="safariTouch" src="safari1.png" />
+          <h3>탐색</h3>
+        </div>
+        <div class="menu-box btns3" onclick="touch(3)">
+          <img class="subscribeTouch" src="subscribe1.png"/>
+          <h3>구독</h3>
+        </div>
+      </section>
+      <nav>
+        <div id="side-bar-menu">
+          <div class="left_btn">
+            <img class="home" src="home1.png" onclick="change(1)"/>
+            <span>홈</span>
+          </div>
+          <div class="left_btn">
+            <img class="safari" src="safari1.png" onclick="change(2)"/>
+            <span>탐색</span>
+          </div>
+          <div class="left_btn">
+            <img class="subscribe" src="subscribe1.png" onclick="change(3)"/>
+            <span>구독</span>
+          </div>
+          <div class="left_btn">
+            <img class="folder" src="folder1.png" onclick="change(4)"/>
+            <span>보관함</span>
+          </div>
+          <div class="left_btn">
+            <img class="record" src="record1.png" onclick="change(5)"/>
+            <span>시청 기록</span>
+          </div>
+        </div>
+      </nav>
+      <main>
+          <div id="contents">
+            <article class="content">
+              <div class="video-box">
+                <div class="thumbnail">
+                  <img src="thumbnail1.png" />
+                </div>
+                <div class="details">
+                  <a class="channel-thumbnail"
+                    ><img src="channel-thumbnail-1.png"
+                  />
+                </a>
+                  <div class="title">
+                    <h3>가나다라마사바아자차</h3>
+                    <div class="channel-box">
+                      <div class="split-channel-box">
+                        <div class="channel-name">가나라다</div>
+                        <div class="channel-data">
+                          <span>조회수 1만회</span>
+                          <span>1개월 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="content">
+              <div class="video-box">
+                <div class="thumbnail">
+                  <img src="thumbnail2.png" />
+                </div>
+                <div class="details">
+                  <a class="channel-thumbnail">
+                    <img src="channel-thumbnail2.png" />
+                  </a>
+                  <div class="title">
+                    <h3>별빛등대의 섬 piano OST 10시간</h3>
+                    <div class="channel-box">
+                      <div class="split-channel-box">
+                        <div class="channel-name">나도몰라</div>
+                        <div class="channel-data">
+                          <span>조회수 1억</span>
+                          <span>5년 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="content">
+              <div class="video-box">
+                <div class="thumbnail">
+                  <img src="thumbnail3.jpeg" />
+                </div>
+                <div class="details">
+                  <a class="channel-thumbnail">
+                    <img src="channel-thumbnail3.png" />
+                  </a>
+                  <div class="title">
+                    <h3>창문으로 둘러싸인 시원한 침실</h3>
+                    <div class="channel-box">
+                      <div class="split-channel-box">
+                        <div class="channel-name">스타크래프</div>
+                        <div class="channel-data">
+                          <span>조회수 3만</span>
+                          <span>한달 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="content">
+              <div class="video-box">
+                <div class="thumbnail">
+                  <img src="thumbnail4.jpeg" />
+                </div>
+                <div class="details">
+                  <a class="channel-thumbnail">
+                    <img src="channel-thumbnail4.png" />
+                  </a>
+                  <div class="title">
+                    <h3>여름이 끝나고 아름다운 외로운 힐링 뮤직</h3>
+                    <div class="channel-box">
+                      <div class="split-channel-box">
+                        <div class="channel-name">꿀잠자셈</div>
+                        <div class="channel-data">
+                          <span>조회수 1조</span>
+                          <span>10년 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="content">
+              <div class="video-box">
+                <div class="thumbnail">
+                  <img src="thumbnail5.png" />
+                </div>
+                <div class="details">
+                  <a class="channel-thumbnail">
+                    <img src="channel-thumbnail5.png" />
+                  </a>
+                  <div class="title">
+                    <h3>명절에 빠지면 섭섭한~ 나박김치!!</h3>
+                    <div class="channel-box">
+                      <div class="split-channel-box">
+                        <div class="channel-name">음식음식</div>
+                        <div class="channel-data">
+                          <span>조회수 생수</span>
+                          <span>녹두 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="content">
+              <div class="video-box">
+                <div class="thumbnail">
+                  <img src="thumbnail6.jpeg" />
+                </div>
+                <div class="details">
+                  <a class="channel-thumbnail">
+                    <img src="channel-thumbnail6.png" />
+                  </a>
+                  <div class="title">
+                    <h3>짐종국과 골드버튼: 실버맨들의 습격</h3>
+                    <div class="channel-box">
+                      <div class="split-channel-box">
+                        <div class="channel-name">운동운동</div>
+                        <div class="channel-data">
+                          <span>조회수 육수</span>
+                          <span>김치 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="content">
+              <div class="video-box">
+                <div class="thumbnail">
+                  <img src="thumbnail7.jpeg" />
+                </div>
+                <div class="details">
+                  <a class="channel-thumbnail">
+                    <img src="channel-thumbnail7.png" />
+                  </a>
+                  <div class="title">
+                    <h3>ASMR 이런 카페 현실엔 없나요?</h3>
+                    <div class="channel-box">
+                      <div class="split-channel-box">
+                        <div class="channel-name">카페카페카페</div>
+                        <div class="channel-data">
+                          <span>조회수 싹수</span>
+                          <span>호박 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="content">
+              <div class="video-box">
+                <div class="thumbnail">
+                  <img src="thumbnail8.jpeg" />
+                </div>
+                <div class="details">
+                  <a class="channel-thumbnail">
+                    <img src="channel-thumbnail8.png" />
+                  </a>
+                  <div class="title">
+                    <h3>이번주 빌보드 1위: THE KID LAROI</h3>
+                    <div class="channel-box">
+                      <div class="split-channel-box">
+                        <div class="channel-name">노래리스트</div>
+                        <div class="channel-data">
+                          <span>조회수 예수</span>
+                          <span>전지 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+      </main>
+      <script src="youtube.js"></script>
+  </body>
+</html>
